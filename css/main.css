@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  height: 70px;
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+header .header-container {
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header-container .header-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-container .header-left p {
+  margin: 0 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+header .header-container .header-left p:hover {
+  cursor: pointer;
+  color: #008248;
+}
+
+header .header-container .header-left .logo {
+  margin-right: 15px;
+}
+
+header .header-container .header-left .logo img {
+  width: 51px;
+  width: 51px;
+}
+
+header .header-container .header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-container .header-right .find-store {
+  margin-right: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+}
+
+header .header-container .header-right .find-store i {
+  font-size: 24px;
+  padding: 0 6px;
+}
+
+header .header-container .header-right .find-store:hover {
+  color: #008248;
+  cursor: pointer;
+}
+
+header .header-container .header-right .sign-in {
+  margin: 0 15px;
+}
+
+header .header-container .header-right .sign-in a {
+  text-decoration: none;
+  color: #008248;
+  border: 1px solid #008248;
+  border-radius: 30px;
+  padding: 7px 17px;
+  font-weight: bold;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+header .header-container .header-right .sign-in a:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+header .header-container .header-right .join-now a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border-radius: 30px;
+  padding: 7px 17px;
+  font-weight: bold;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+header .header-container .header-right .join-now a:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-color: rgba(0, 0, 0, 0.7);
+}
+/*# sourceMappingURL=main.css.map */
