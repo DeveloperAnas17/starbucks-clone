@@ -6,10 +6,15 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
   height: 70px;
   -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -39,17 +44,32 @@ header .header-container .header-left {
           align-items: center;
 }
 
-header .header-container .header-left p {
+header .header-container .header-left .left-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-container .header-left .left-nav p {
   margin: 0 15px;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   color: rgba(0, 0, 0, 0.8);
 }
 
-header .header-container .header-left p:hover {
+header .header-container .header-left .left-nav p:hover {
   cursor: pointer;
   color: #008248;
+}
+
+@media (max-width: 768px) {
+  header .header-container .header-left .left-nav {
+    display: none;
+  }
 }
 
 header .header-container .header-left .logo {
@@ -124,5 +144,32 @@ header .header-container .header-right .join-now a {
 header .header-container .header-right .join-now a:hover {
   background-color: rgba(0, 0, 0, 0.7);
   border-color: rgba(0, 0, 0, 0.7);
+}
+
+main .main-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+main .main-container .announcement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f0f0f0;
+}
+
+main .main-container .announcement span {
+  padding: 3.2rem 0;
+  max-width: 60%;
+  font-size: 19px;
+  text-align: center;
+  line-height: 1.75;
+  font-weight: 500;
 }
 /*# sourceMappingURL=main.css.map */
