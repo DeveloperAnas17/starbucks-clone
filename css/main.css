@@ -13,7 +13,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: white;
+  background-color: #f7f7f7;
   z-index: 10;
   height: 70px;
   -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -162,6 +162,7 @@ main .main-container .announcement {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #f0f0f0;
+  margin-bottom: 32px;
 }
 
 main .main-container .announcement span {
@@ -171,5 +172,102 @@ main .main-container .announcement span {
   text-align: center;
   line-height: 1.75;
   font-weight: 500;
+}
+
+main .main-container .left-right-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+main .main-container .left-right-section .text {
+  background-color: #f7f7f7;
+  color: #008248;
+  padding: 32px 48px;
+  text-align: center;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .main-container .left-right-section .text h1 {
+  margin-bottom: 15px;
+  font-weight: 400;
+  text-align: center;
+}
+
+main .main-container .left-right-section .text h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+main .main-container .left-right-section .text .cta {
+  margin-top: 25px;
+  border: 1px solid #008248;
+  border-radius: 30px;
+  padding: 6px 15px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+main .main-container .left-right-section .text .cta:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+main .main-container .left-right-section .image {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .main-container .left-right-section .image img {
+  width: 100%;
+}
+
+main .main-container .chill {
+  background-color: #f2f0cb;
+}
+
+main .main-container .chill .text h1 {
+  font-weight: 600;
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+main .main-container .chill .text h3 {
+  line-height: 1.5;
+}
+
+main .main-container .top-bottom-section {
+  width: 50%;
+}
+
+main .main-container .top-bottom-section .section-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .main-container .top-bottom-section .section-container .image {
+  width: 50%;
 }
 /*# sourceMappingURL=main.css.map */
