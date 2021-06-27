@@ -11,7 +11,6 @@ body {
 }
 
 // header
-
 header {
   position: sticky;
   top: 0;
@@ -123,6 +122,7 @@ header {
   }
 }
 
+// Main
 main {
   .main-container {
     max-width: 1440px;
@@ -154,7 +154,6 @@ main {
         color: #008248;
         padding: 32px 48px;
         text-align: center;
-        //   flex: 0.5;
         width: 50%;
         display: flex;
         flex-direction: column;
@@ -228,6 +227,7 @@ main {
       }
 
       .top-bottom-section {
+        display: flex;
         width: 50%;
         .section-container {
           background-color: $primaryColor;
@@ -272,6 +272,98 @@ main {
             img {
               width: 100%;
             }
+          }
+        }
+      }
+    }
+
+    .straight-section {
+      display: flex;
+      margin-bottom: 20px;
+
+      .text {
+        background-color: #f7f7f7;
+        color: #008248;
+        padding: 32px 20px;
+        text-align: center;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+          margin-bottom: 15px;
+          font-weight: 400;
+          text-align: center;
+        }
+
+        h3 {
+          text-align: center;
+          margin-bottom: 15px;
+          font-weight: 400;
+        }
+
+        .cta {
+          margin-top: 25px;
+          border: 1px solid #008248;
+          border-radius: 30px;
+          padding: 6px 15px;
+          cursor: pointer;
+          transition: all 0.2s ease-in;
+
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.06);
+          }
+        }
+      }
+
+      .image {
+        width: 50%;
+        display: flex;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// footer
+footer {
+  background-color: #f0f0f0;
+  padding: 24px 0;
+  box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.4);
+
+  .footer-container {
+    max-width: 1440px;
+    padding: 0 40px;
+    display: flex;
+    margin: 0 auto;
+
+    .links-container {
+      width: 190px;
+      margin-right: 20px;
+
+      h3 {
+        // text-align: center;
+        font-weight: bold;
+        color: #000000;
+        margin-bottom: 24px;
+      }
+
+      ul {
+        li {
+          list-style: none;
+          color: #008248;
+          // text-align: center;
+          padding: 0.8rem 0;
+          margin-bottom: 0.8rem;
+
+          &:hover {
+            color: rgba(0, 0, 0, 0.87);
+            cursor: pointer;
           }
         }
       }
